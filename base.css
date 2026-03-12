@@ -1,0 +1,40 @@
+/* base.css — resets, antialiasing, polish */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+::selection {
+  background: oklch(0.65 0.15 200 / 0.3);
+  color: var(--text-primary);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
