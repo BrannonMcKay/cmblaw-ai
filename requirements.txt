@@ -1,7 +1,0 @@
-# cmblaw.ai API Server — Production Dependencies
-fastapi==0.115.*
-uvicorn[standard]==0.34.*
-pydantic[email]==2.10.*
-httpx==0.28.*
-aiohttp==3.11.*
-anthropic==0.49.*
