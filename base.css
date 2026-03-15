@@ -1,45 +1,35 @@
-/* base.css */
+/* base.css — resets, antialiasing, polish */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
-  hanging-punctuation: first last;
-  scroll-padding-top: var(--space-16);
+  scroll-padding-top: 72px;
 }
-
 body {
-  min-height: 100dvh;
+  min-height: 100vh;
   line-height: 1.6;
-  font-family: var(--font-body, sans-serif);
-  font-size: var(--text-sm);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
-ul[role="list"], ol[role="list"] { list-style: none; }
-input, button, textarea, select { font: inherit; color: inherit; }
-
-h1, h2, h3, h4, h5, h6 { text-wrap: balance; line-height: 1.15; }
-p, li, figcaption { text-wrap: pretty; max-width: 72ch; }
-
-::selection {
-  background: oklch(from var(--color-primary) l c h / 0.25);
-  color: var(--color-text);
-}
-
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; }
 :focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 3px;
-  border-radius: var(--radius-sm);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
-
+::selection {
+  background: oklch(0.65 0.15 200 / 0.3);
+  color: var(--text-primary);
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -47,12 +37,4 @@ p, li, figcaption { text-wrap: pretty; max-width: 72ch; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-button { cursor: pointer; background: none; border: none; }
-table { border-collapse: collapse; width: 100%; }
-
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
 }
