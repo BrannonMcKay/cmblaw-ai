@@ -243,6 +243,27 @@
   height: 24px;
 }
 
+/* ===== HUMAN REDIRECT BANNER ===== */
+.human-banner {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-primary);
+  padding: var(--space-2) 0;
+  text-align: center;
+}
+.human-banner p {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+.human-banner a {
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+.human-banner a:hover {
+  text-decoration: underline;
+}
+
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
   display: flex;
