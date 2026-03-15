@@ -138,7 +138,8 @@ curl -X POST https://api.cmblaw.ai/api/v1/trademark/file \
     "goods_services_description": "Software development services",
     "uspto_classes": [42],
     "filing_basis": "intent",
-    "contact_email": "legal@acme.com"
+    "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100"
   }'</code></pre></div>
       </div>
     </div>
@@ -236,6 +237,7 @@ curl -X POST https://api.cmblaw.ai/api/v1/trademark/file \
               <tr><td><span class="param-name">specimen_url</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">URL to specimen of use</span></td></tr>
               <tr><td><span class="param-name">filing_basis</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">"use" or "intent"</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Contact email for updates</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID (if paying via one-time Stripe session instead of balance)</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token (alternative to other payment methods)</span></td></tr>
               <tr><td><span class="param-name">usdc_tx_hash</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">USDC transaction hash on Base (alternative to other payment methods)</span></td></tr>
@@ -271,6 +273,7 @@ curl -X POST https://api.cmblaw.ai/api/v1/trademark/file \
     "uspto_classes": [42],
     "filing_basis": "intent",
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
           <div class="code-block__content" data-lang="python"><pre><code class="language-python">import requests
@@ -290,6 +293,7 @@ response = requests.post(
         "uspto_classes": [42],
         "filing_basis": "intent",
         "contact_email": "legal@acme.com",
+        "contact_phone": "+1-555-0100",
         "payment_token": "tok_live_abc123"
     }
 )
@@ -310,6 +314,7 @@ print(response.json())</code></pre></div>
     uspto_classes: [42],
     filing_basis: "intent",
     contact_email: "legal@acme.com",
+    contact_phone: "+1-555-0100",
     payment_token: "tok_live_abc123"
   })
 });
@@ -368,6 +373,7 @@ console.log(data);</code></pre></div>
               <tr><td><span class="param-name">flowcharts</span></td><td><span class="param-type">string[]</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Array of URLs to flowchart images</span></td></tr>
               <tr><td><span class="param-name">sequence_diagrams</span></td><td><span class="param-type">string[]</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Array of URLs to sequence diagram images</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Contact email for updates</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token</span></td></tr>
               <tr><td><span class="param-name">usdc_tx_hash</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">USDC transaction hash on Base</span></td></tr>
@@ -401,6 +407,7 @@ console.log(data);</code></pre></div>
     "system_diagram_url": "https://storage.example.com/diagrams/system.png",
     "flowcharts": ["https://storage.example.com/diagrams/flow1.png"],
     "contact_email": "cto@startup.com",
+    "contact_phone": "+1-555-0100",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
           <div class="code-block__content" data-lang="python"><pre><code class="language-python">import requests
@@ -418,6 +425,7 @@ response = requests.post(
         "system_diagram_url": "https://storage.example.com/diagrams/system.png",
         "flowcharts": ["https://storage.example.com/diagrams/flow1.png"],
         "contact_email": "cto@startup.com",
+        "contact_phone": "+1-555-0100",
         "payment_token": "tok_live_abc123"
     }
 )
@@ -436,6 +444,7 @@ print(response.json())</code></pre></div>
     system_diagram_url: "https://storage.example.com/diagrams/system.png",
     flowcharts: ["https://storage.example.com/diagrams/flow1.png"],
     contact_email: "cto@startup.com",
+    contact_phone: "+1-555-0100",
     payment_token: "tok_live_abc123"
   })
 });
@@ -493,6 +502,7 @@ console.log(data);</code></pre></div>
               <tr><td><span class="param-name">registered_agent</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Registered agent name and address</span></td></tr>
               <tr><td><span class="param-name">members_or_officers</span></td><td><span class="param-type">object[]</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Array of members/officers with name and role</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Contact email for updates</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token</span></td></tr>
               <tr><td><span class="param-name">usdc_tx_hash</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">USDC transaction hash on Base</span></td></tr>
@@ -528,6 +538,7 @@ console.log(data);</code></pre></div>
       {"name": "Jane Smith", "role": "Managing Member"}
     ],
     "contact_email": "jane@acme.com",
+    "contact_phone": "+1-555-0100",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
           <div class="code-block__content" data-lang="python"><pre><code class="language-python">import requests
@@ -547,6 +558,7 @@ response = requests.post(
             {"name": "Jane Smith", "role": "Managing Member"}
         ],
         "contact_email": "jane@acme.com",
+        "contact_phone": "+1-555-0100",
         "payment_token": "tok_live_abc123"
     }
 )
@@ -567,6 +579,7 @@ print(response.json())</code></pre></div>
       { name: "Jane Smith", role: "Managing Member" }
     ],
     contact_email: "jane@acme.com",
+    contact_phone: "+1-555-0100",
     payment_token: "tok_live_abc123"
   })
 });
@@ -953,6 +966,7 @@ console.log(data);</code></pre></div>
               <tr><td><span class="param-name">parties</span></td><td><span class="param-type">object[]</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Array of parties: {name, address, entity_type, role}</span></td></tr>
               <tr><td><span class="param-name">terms</span></td><td><span class="param-type">object</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">{effective_date, governing_law, scope, duration}</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Contact email for delivery</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token</span></td></tr>
               <tr><td><span class="param-name">usdc_tx_hash</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">USDC transaction hash on Base</span></td></tr>
@@ -1002,6 +1016,7 @@ console.log(data);</code></pre></div>
       "duration": "2 years"
     },
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
           <div class="code-block__content" data-lang="python"><pre><code class="language-python">import requests
@@ -1035,6 +1050,7 @@ response = requests.post(
             "duration": "2 years"
         },
         "contact_email": "legal@acme.com",
+        "contact_phone": "+1-555-0100",
         "payment_token": "tok_live_abc123"
     }
 )
@@ -1069,6 +1085,7 @@ print(response.json())</code></pre></div>
       duration: "2 years"
     },
     contact_email: "legal@acme.com",
+    contact_phone: "+1-555-0100",
     payment_token: "tok_live_abc123"
   })
 });
@@ -1136,6 +1153,7 @@ console.log(data);</code></pre></div>
               <tr><td><span class="param-name">description</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Detailed description of your legal question</span></td></tr>
               <tr><td><span class="param-name">contact_name</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Your full name or organization name</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Contact email for notifications</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token</span></td></tr>
               <tr><td><span class="param-name">usdc_tx_hash</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">USDC transaction hash on Base</span></td></tr>
@@ -1167,6 +1185,7 @@ console.log(data);</code></pre></div>
     "description": "We discovered a competitor using a confusingly similar mark in class 9...",
     "contact_name": "Acme AI Agent",
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
           <div class="code-block__content" data-lang="python"><pre><code class="language-python">import requests
@@ -1182,6 +1201,7 @@ response = requests.post(
         "description": "We discovered a competitor using a confusingly similar mark in class 9...",
         "contact_name": "Acme AI Agent",
         "contact_email": "legal@acme.com",
+        "contact_phone": "+1-555-0100",
         "payment_token": "tok_live_abc123"
     }
 )
@@ -1200,6 +1220,7 @@ print(f"Thread opened: {consultation_id}")</code></pre></div>
     description: "We discovered a competitor using a confusingly similar mark in class 9...",
     contact_name: "Acme AI Agent",
     contact_email: "legal@acme.com",
+    contact_phone: "+1-555-0100",
     payment_token: "tok_live_abc123"
   })
 });
@@ -1214,7 +1235,8 @@ curl -X POST https://api.cmblaw.ai/api/v1/consultation/book \
   -d '{
     "topic": "Trademark infringement question",
     "contact_name": "Acme AI Agent",
-    "contact_email": "legal@acme.com"
+    "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100"
   }'
 # → HTTP 402 Payment Required
 # ← Header: X-PAYMENT-REQUIRED: {"network":"eip155:8453","asset":"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913","amount":"1000000","payTo":"0xCMBWalletAddress","nonce":"abc123"}
@@ -1227,7 +1249,8 @@ curl -X POST https://api.cmblaw.ai/api/v1/consultation/book \
   -d '{
     "topic": "Trademark infringement question",
     "contact_name": "Acme AI Agent",
-    "contact_email": "legal@acme.com"
+    "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100"
   }'
 # → HTTP 201 Created — thread opened, payment settled instantly via Coinbase facilitator
 # Zero gas fees. Network: Base (EIP-155:8453)
@@ -1557,6 +1580,7 @@ if (quote.status === "quoted") {
               <tr><td><span class="param-name">client_party</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Which party the reviewer should represent/protect</span></td></tr>
               <tr><td><span class="param-name">review_focus</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Specific areas to focus on (e.g., "IP clauses and indemnification")</span></td></tr>
               <tr><td><span class="param-name">contact_email</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Email for delivery of the completed review</span></td></tr>
+              <tr><td><span class="param-name">contact_phone</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Phone number (recommended)</span></td></tr>
               <tr><td><span class="param-name">contact_name</span></td><td><span class="param-type">string</span></td><td><span class="param-required">Required</span></td><td><span class="param-desc">Name or organization</span></td></tr>
               <tr><td><span class="param-name">stripe_session_id</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">Stripe checkout session ID</span></td></tr>
               <tr><td><span class="param-name">payment_token</span></td><td><span class="param-type">string</span></td><td><span class="param-optional">Optional</span></td><td><span class="param-desc">LawPay token</span></td></tr>
@@ -1594,6 +1618,7 @@ if (quote.status === "quoted") {
     "client_party": "Acme Corp",
     "review_focus": "IP ownership, data privacy, and indemnification terms",
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "contact_name": "Acme AI Agent",
     "payment_token": "tok_live_abc123"
   }'</code></pre></div>
@@ -1628,6 +1653,7 @@ submit_resp = requests.post(
         "client_party": "Acme Corp",
         "review_focus": "IP ownership, data privacy, and indemnification terms",
         "contact_email": "legal@acme.com",
+        "contact_phone": "+1-555-0100",
         "contact_name": "Acme AI Agent",
         "payment_token": "tok_live_abc123"
     }
@@ -1649,6 +1675,7 @@ curl -X POST https://api.cmblaw.ai/api/v1/contract/review \
     "parties": ["Acme Corp", "Widget Inc"],
     "client_party": "Acme Corp",
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "contact_name": "Acme AI Agent"
   }'
 # → HTTP 402 Payment Required
@@ -2452,7 +2479,8 @@ curl -X POST https://api.cmblaw.ai/api/v1/consultation/book \
   -d '{
     "topic": "Patent strategy",
     "contact_name": "Acme AI Agent",
-    "contact_email": "legal@acme.com"
+    "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100"
   }'
 # → $1 deducted from balance automatically</code></pre></div>
         </div>
@@ -2613,6 +2641,7 @@ curl https://api.cmblaw.ai/api/v1/payment-methods \
     "topic": "Trademark infringement question",
     "contact_name": "Acme AI Agent",
     "contact_email": "legal@acme.com",
+    "contact_phone": "+1-555-0100",
     "usdc_tx_hash": "0xabc123...def456"
   }'</code></pre></div>
         </div>

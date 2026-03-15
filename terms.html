@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — cmblaw.ai</title>
+<meta name="description" content="Terms of Service for the cmblaw.ai API Service by Clayton, McKay & Bailey, PC.">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+.tos-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-6) var(--space-16);
+}
+.tos-page-title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.025em;
+}
+.tos-page-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+}
+.tos-firm-name {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+.tos-meta {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-1);
+}
+.tos-h2 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-default);
+  letter-spacing: -0.02em;
+}
+.tos-h2-num {
+  color: var(--accent-text);
+  margin-right: var(--space-2);
+}
+.tos-h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+.tos-p {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+.tos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4) 0;
+}
+.tos-list li {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding-left: var(--space-5);
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+.tos-list li::before {
+  content: "";
+  position: absolute;
+  left: var(--space-2);
+  top: 0.65em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent-text);
+}
+.tos-p code, .tos-list code, .tos-h3 code {
+  background: var(--surface-2);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--accent-text);
+}
+.tos-p strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.tos-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--accent-text);
+  text-decoration: none;
+  margin-bottom: var(--space-8);
+  transition: opacity 0.2s;
+}
+.tos-back-link:hover {
+  opacity: 0.8;
+}
+.tos-back-link svg {
+  width: 16px;
+  height: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" role="banner">
+  <div class="container header__inner">
+    <a href="./index.html" class="header__logo" aria-label="cmblaw.ai home">
+      <img src="./assets/logo-header-white.png" alt="CMB Law" class="logo-dark">
+      <img src="./assets/logo-header.png" alt="CMB Law" class="logo-light" style="display:none;">
+      <span class="header__logo-badge">API</span>
+    </a>
+
+    <nav class="header__nav" aria-label="Main navigation">
+      <a href="./index.html#getting-started" class="header__nav-link">Getting Started</a>
+      <a href="./index.html#api-reference" class="header__nav-link">API Reference</a>
+      <a href="./index.html#pricing" class="header__nav-link">Pricing</a>
+      <a href="./index.html#authentication" class="header__nav-link">Authentication</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="theme-toggle" aria-label="Toggle theme" type="button">
+        <svg class="icon-moon" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+      </button>
+      <a href="mailto:info@cmblaw.com?subject=API%20Key%20Request" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Get API Key</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="tos-container">
+    <a href="./index.html" class="tos-back-link">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"/></svg>
+      Back to API Documentation
+    </a>
+
+    <h1 class="tos-page-title">Terms of Service</h1>
+    <p class="tos-page-subtitle">cmblaw.ai API Service</p>
+
+    <p class="tos-firm-name"><strong>Clayton, McKay & Bailey, PC</strong></p>
+<p class="tos-p">800 Battery Ave. SE, Suite 300, Atlanta, GA 30339 (404) 414-8633 | info@cmblaw.com
+</p>
+<p class="tos-meta"><strong>Effective Date:</strong> March 5, 2026</p>
+<p class="tos-meta"><strong>Last Updated:</strong> March 5, 2026</p>
+<p class="tos-p">These Terms of Service ("Terms") govern access to and use of the cmblaw.ai application programming interface and related services ("API" or "Service") provided by Clayton, McKay & Bailey, PC, a Georgia professional corporation ("CMB," "Firm," "we," "us," or "our"). By registering for an API key, accessing the Service, or submitting any data through the API, you ("User," "you," or "your") — on behalf of yourself or the organization you represent — agree to be bound by these Terms. If you do not agree, do not access or use the Service.
+</p>
+<h2 id="tos-description-of-service" class="tos-h2"><span class="tos-h2-num">1.</span> Description of Service</h2>
+<h3 class="tos-h3">1.1 What the Service Does</h3>
+<p class="tos-p">cmblaw.ai is a REST API that enables AI agents, automated systems, and developers to submit requests for certain legal services to Clayton, McKay & Bailey, PC. The Service currently supports the following request types:
+</p>
+<ul class="tos-list">
+  <li><strong>Trademark filings</strong> — preparation and submission of trademark applications with the United States Patent and Trademark Office (USPTO) or other applicable registries;</li>
+  <li><strong>Provisional patent applications</strong> — drafting and filing of provisional patent applications with the USPTO;</li>
+  <li><strong>Business entity formations</strong> — preparation and filing of formation documents for business entities in applicable jurisdictions;</li>
+  <li><strong>Trademark monitoring</strong> — ongoing monitoring of trademark registers and commercial databases for potentially conflicting marks;</li>
+  <li><strong>IP portfolio status checks</strong> — retrieval of status information regarding pending and registered intellectual property assets;</li>
+  <li><strong>Legal document generation</strong> — preparation of IP-related agreements, assignments, licenses, and related documents; and</li>
+  <li><strong>Consultation bookings</strong> — scheduling of consultations with a licensed attorney at the Firm.</li>
+</ul>
+<p class="tos-p">The specific services available through the API, associated pricing, and processing timelines are described in the API documentation available at the applicable developer portal (the "Documentation"). CMB reserves the right to add, modify, or discontinue any service offering upon notice as provided in Section 14.
+</p>
+<h3 class="tos-h3">1.2 Human-in-the-Loop Review</h3>
+<p class="tos-p">The Service operates on a <strong>human-in-the-loop</strong> model. Every submission received through the API is reviewed and approved by a licensed attorney at Clayton, McKay & Bailey, PC before any legal action is taken on behalf of or attributed to a User. No filing, submission, or legally operative document will be transmitted to a third party, government body, or registry without prior attorney review and approval. The AI-assisted components of the Service, described further in Section 4, are preliminary and assistive in nature only.
+</p>
+<h2 id="tos-no-attorney-client-relationship-by-default" class="tos-h2"><span class="tos-h2-num">2.</span> No Attorney-Client Relationship by Default</h2>
+<h3 class="tos-h3">2.1 API Use Does Not Create Representation</h3>
+<p class="tos-p"><strong>Use of the cmblaw.ai API, standing alone, does not create an attorney-client relationship between the User and Clayton, McKay & Bailey, PC, or between the User and any individual attorney employed or affiliated with the Firm.</strong>
+</p>
+<p class="tos-p">Access to and use of the Service, including the submission of information, documents, or requests through the API, constitutes the engagement of a technology-facilitated administrative intake process, not the rendering of legal advice and not the formation of an attorney-client relationship.
+</p>
+<h3 class="tos-h3">2.2 Formation of Attorney-Client Relationship</h3>
+<p class="tos-p">An attorney-client relationship between a User and Clayton, McKay & Bailey, PC is formed <strong>only</strong> upon execution of a written engagement letter signed by both the User (or an authorized representative thereof) and a duly authorized attorney at the Firm. Until such an engagement letter is fully executed, no User may rely on any communication from the Firm or any output generated by the Service as legal advice, and no attorney-client privilege attaches to any such communication or output.
+</p>
+<h3 class="tos-h3">2.3 No Unauthorized Practice</h3>
+<p class="tos-p">Nothing in these Terms, the Documentation, or the Service itself constitutes the unauthorized practice of law. The API functions as an intake and administrative tool. All substantive legal work is performed by licensed attorneys at Clayton, McKay & Bailey, PC.
+</p>
+<h2 id="tos-eligibility-and-account-registration" class="tos-h2"><span class="tos-h2-num">3.</span> Eligibility and Account Registration</h2>
+<h3 class="tos-h3">3.1 Eligibility</h3>
+<p class="tos-p">The Service is available to organizations and individuals who are at least eighteen (18) years of age and have the legal capacity to enter into binding contracts. If you are accessing the Service on behalf of a legal entity, you represent and warrant that you have authority to bind that entity to these Terms.
+</p>
+<h3 class="tos-h3">3.2 API Keys</h3>
+<p class="tos-p">Access to the Service is granted through API keys issued on a per-organization basis. Upon successful registration and payment of any applicable fees, CMB will issue an API key to the registered organization. API keys are confidential credentials. You are responsible for:
+</p>
+<ul class="tos-list">
+  <li>Maintaining the confidentiality of your API key;</li>
+  <li>All activity conducted through your API key, whether or not authorized by you; and</li>
+  <li>Promptly notifying CMB at info@cmblaw.com if you suspect unauthorized use of or access to your API key.</li>
+</ul>
+<p class="tos-p">CMB will not be liable for any loss or damage arising from unauthorized use of your API key resulting from your failure to safeguard it.
+</p>
+<h3 class="tos-h3">3.3 Accuracy of Registration Information</h3>
+<p class="tos-p">You represent and warrant that all information provided in connection with your registration is accurate, current, and complete. You agree to maintain and promptly update this information as necessary.
+</p>
+<h2 id="tos-ai-processing-disclosure-and-consent" class="tos-h2"><span class="tos-h2-num">4.</span> AI Processing Disclosure and Consent</h2>
+<h3 class="tos-h3">4.1 Use of AI Models</h3>
+<p class="tos-p">The Service incorporates artificial intelligence ("AI") tools for two primary preliminary functions:
+</p>
+<ul class="tos-list">
+  <li><strong>Conflict checking</strong> — submitted data, including names, descriptions, and identifying information, is transmitted to AI models to identify potential conflicts with existing trademarks, patents, or other intellectual property; and</li>
+  <li><strong>Drafting assistance</strong> — submitted information is processed by AI models to generate preliminary drafts of documents, filings, and correspondence for subsequent attorney review.</li>
+</ul>
+<h3 class="tos-h3">4.2 User Consent to AI Processing</h3>
+<p class="tos-p">By submitting any data through the API, you expressly consent to the processing of that data by AI models as described in Section 4.1. You acknowledge that:
+</p>
+<ul class="tos-list">
+  <li>Submitted data may be transmitted to third-party AI service providers subject to appropriate data processing agreements and confidentiality obligations;</li>
+  <li>AI-generated outputs are preliminary and subject to mandatory review, modification, and approval by a licensed attorney before any action is taken; and</li>
+  <li>AI models may produce outputs that are incomplete, inaccurate, or legally insufficient, and all such outputs are reviewed and not relied upon without attorney verification.</li>
+</ul>
+<h3 class="tos-h3">4.3 No Guarantee of AI Accuracy</h3>
+<p class="tos-p">CMB makes no representation or warranty regarding the accuracy, completeness, or fitness for purpose of any AI-generated output. AI outputs constitute internal preliminary drafts only and do not represent legal advice or final work product. The attorney review required under Section 1.2 is the operative quality control mechanism for all Service outputs.
+</p>
+<h2 id="tos-data-handling-and-privacy" class="tos-h2"><span class="tos-h2-num">5.</span> Data Handling and Privacy</h2>
+<h3 class="tos-h3">5.1 Data Collected</h3>
+<p class="tos-p">In connection with your use of the Service, CMB collects and processes:
+</p>
+<ul class="tos-list">
+  <li>Registration and account information (name, organization name, contact information, billing information);</li>
+  <li>API usage logs (request timestamps, endpoints accessed, response codes, IP addresses);</li>
+  <li>Submission data (all information, documents, and content transmitted through the API, including names, descriptions, claims, and supporting materials); and</li>
+  <li>Payment transaction records.</li>
+</ul>
+<h3 class="tos-h3">5.2 Data Storage and Security</h3>
+<p class="tos-p">All submission data and associated account information is stored using industry-standard encryption both in transit (TLS 1.2 or higher) and at rest (AES-256 or equivalent). CMB employs reasonable administrative, technical, and physical safeguards designed to protect your data against unauthorized access, disclosure, alteration, or destruction.
+</p>
+<h3 class="tos-h3">5.3 Data Retention</h3>
+<p class="tos-p">CMB retains submission data and associated work product in accordance with applicable professional responsibility rules governing attorney records and Georgia State Bar requirements. Unless a shorter retention period is required by applicable law, CMB retains matter-related data for a minimum of <strong>seven (7) years</strong> following the closure of the associated matter or the termination of the Service relationship, whichever is later.
+</p>
+<p class="tos-p">API usage logs and non-matter data are retained for a minimum of <strong>two (2) years</strong> for security, compliance, and audit purposes.
+</p>
+<h3 class="tos-h3">5.4 Deletion Rights</h3>
+<p class="tos-p">Subject to applicable professional responsibility rules, legal hold obligations, and the minimum retention periods in Section 5.3, you may request deletion of your organization's submission data by submitting a written request to info@cmblaw.com. CMB will acknowledge deletion requests within ten (10) business days and complete permissible deletions within thirty (30) days, subject to any legal or professional obligation to retain records.
+</p>
+<h3 class="tos-h3">5.5 No Sale of Data</h3>
+<p class="tos-p">CMB does not sell, rent, or trade your submission data to third parties for marketing purposes. Data is shared only: (a) with AI service providers as described in Section 4; (b) with government bodies and registries as required to perform the requested services; (c) as necessary to comply with applicable law, court order, or regulatory requirement; or (d) as authorized in writing by the User.
+</p>
+<h3 class="tos-h3">5.6 Applicable Privacy Law</h3>
+<p class="tos-p">If your use of the Service involves personal data subject to applicable privacy laws (including, without limitation, the California Consumer Privacy Act, the EU General Data Protection Regulation, or the Georgia Personal Data Privacy Act), you are responsible for ensuring that your submission of such data complies with applicable law. CMB processes submitted data as a service provider under your direction with respect to personal data you provide.
+</p>
+<h2 id="tos-confidentiality" class="tos-h2"><span class="tos-h2-num">6.</span> Confidentiality</h2>
+<h3 class="tos-h3">6.1 Treatment of Submissions</h3>
+<p class="tos-p">CMB treats all submission data received through the API as confidential information and will not disclose it to third parties except: (a) as required to perform the requested services (including submissions to applicable registries and government bodies); (b) as required to process the submission through AI models as disclosed in Section 4; (c) as required by applicable law, professional responsibility rules, or court order; or (d) with your prior written consent.
+</p>
+<h3 class="tos-h3">6.2 Limitation of Confidentiality Protections Before Engagement</h3>
+<p class="tos-p">Because an attorney-client relationship is not formed by use of the API alone (as described in Section 2), attorney-client privilege does not automatically attach to communications and submissions made prior to execution of an engagement letter. Users are advised not to submit information through the API that they wish to protect under attorney-client privilege until an engagement letter has been executed. Once an engagement letter is in effect, privilege protections apply in accordance with applicable law.
+</p>
+<h3 class="tos-h3">6.3 AI Processing Caveat</h3>
+<p class="tos-p">You acknowledge that the confidentiality protections described in this Section 6 are subject to and qualified by the AI processing described in Section 4. Data submitted through the API will be transmitted to AI service providers as described therein. CMB requires its AI service providers to maintain confidentiality and implement appropriate data security measures, but cannot guarantee that the same legal protections applicable to attorney-client privileged communications will apply to data processed by third-party AI systems.
+</p>
+<h2 id="tos-payment-terms" class="tos-h2"><span class="tos-h2-num">7.</span> Payment Terms</h2>
+<h3 class="tos-h3">7.1 Pricing</h3>
+<p class="tos-p">The Service is priced on a flat-rate, per-service basis. Current pricing for each service type is published in the Documentation. Prices range from monthly subscription fees to per-matter fees and are subject to change upon notice as provided in Section 14. Fees currently range from <strong>$10.00/month</strong> for certain subscription services to <strong>$1,500.00</strong> for certain per-matter services.
+</p>
+<h3 class="tos-h3">7.2 Payment Required Before Processing</h3>
+<p class="tos-p">Payment is required in full before any submission is processed or any attorney review is initiated. CMB will not begin work on any submission until payment has been received and confirmed. Payments are processed through <strong>LawPay</strong>, CMB's authorized legal payments platform. By submitting payment, you authorize the charge to the payment method on file.
+</p>
+<h3 class="tos-h3">7.3 Refunds</h3>
+<p class="tos-p"><strong>Except as expressly provided in this Section 7.3, all fees are non-refundable.</strong> A full refund will be issued only if: (a) CMB is unable to initiate attorney review of your submission within the timeframe stated in the Documentation due to circumstances within CMB's control; or (b) CMB determines, prior to the commencement of attorney review, that it is unable to accept the representation for reasons unrelated to User conduct. <strong>Once attorney review of a submission has commenced, no refund will be issued.</strong> If CMB identifies a conflict of interest or other professional responsibility issue after review has commenced that prevents completion of the work, CMB will retain fees for work performed and refund the remainder, if any, at its reasonable discretion.
+</p>
+<h3 class="tos-h3">7.4 Disputed Charges</h3>
+<p class="tos-p">Disputes regarding charges must be submitted in writing to info@cmblaw.com within thirty (30) days of the charge. CMB will investigate and respond within fifteen (15) business days. Chargebacks initiated without prior written dispute resolution efforts may result in suspension of API access pending resolution.
+</p>
+<h3 class="tos-h3">7.5 Taxes</h3>
+<p class="tos-p">You are responsible for all applicable taxes, levies, or duties imposed by taxing authorities with respect to your use of the Service, excluding taxes on CMB's net income.
+</p>
+<h2 id="tos-api-usage-terms" class="tos-h2"><span class="tos-h2-num">8.</span> API Usage Terms</h2>
+<h3 class="tos-h3">8.1 License Grant</h3>
+<p class="tos-p">Subject to your compliance with these Terms and payment of all applicable fees, CMB grants you a limited, non-exclusive, non-transferable, revocable license to access and use the API solely for your own internal business purposes and in accordance with the Documentation.
+</p>
+<h3 class="tos-h3">8.2 Rate Limits</h3>
+<p class="tos-p">The Service enforces the following default rate limits:
+</p>
+<ul class="tos-list">
+  <li><strong>30 requests per hour</strong> per API key; and</li>
+  <li><strong>200 requests per day</strong> per API key.</li>
+</ul>
+<p class="tos-p">CMB reserves the right to modify rate limits upon notice. Requests that exceed applicable rate limits will receive a rate limit error response. Repeated or persistent violations of rate limits may result in temporary or permanent suspension of your API key.
+</p>
+<h3 class="tos-h3">8.3 Permitted Use</h3>
+<p class="tos-p">You may use the API only:
+</p>
+<ul class="tos-list">
+  <li>To submit legal service requests on behalf of your organization or clients for whom you are authorized to act;</li>
+  <li>In compliance with all applicable laws and regulations;</li>
+  <li>In accordance with the Documentation; and</li>
+  <li>For lawful business purposes consistent with the services described in Section 1.</li>
+</ul>
+<h3 class="tos-h3">8.4 Prohibited Use</h3>
+<p class="tos-p">You may not:
+</p>
+<ul class="tos-list">
+  <li>Use the API to submit fraudulent, fabricated, or knowingly inaccurate information;</li>
+  <li>Attempt to reverse engineer, decompile, or otherwise derive the source code or structure of the API;</li>
+  <li>Use the API to transmit malware, malicious code, or any content that interferes with the Service;</li>
+  <li>Share, resell, or sublicense your API key to third parties without prior written consent from CMB;</li>
+  <li>Use the API in any manner that would constitute the unauthorized practice of law or assist another in doing so;</li>
+  <li>Use the API to process matters in which a known conflict of interest exists;</li>
+  <li>Circumvent or attempt to circumvent rate limits, security controls, or access restrictions;</li>
+  <li>Use the API in a manner that places unreasonable or disproportionate load on CMB's infrastructure; or</li>
+  <li>Use the API for any purpose that violates applicable law, professional responsibility rules, or the rights of third parties.</li>
+</ul>
+<h3 class="tos-h3">8.5 Key Revocation</h3>
+<p class="tos-p">CMB reserves the right to suspend or revoke your API key at any time, with or without prior notice, if CMB determines, in its reasonable discretion, that:
+</p>
+<ul class="tos-list">
+  <li>You have violated any provision of these Terms;</li>
+  <li>Continued access would create a conflict of interest or violate CMB's professional responsibility obligations;</li>
+  <li>Your account has been compromised or is being used without authorization;</li>
+  <li>You have failed to pay any fees when due; or</li>
+  <li>Continued access is otherwise incompatible with CMB's professional obligations or business operations.</li>
+</ul>
+<p class="tos-p">In cases of non-emergency revocation, CMB will endeavor to provide at least five (5) business days' prior written notice where practicable.
+</p>
+<h2 id="tos-limitation-of-liability" class="tos-h2"><span class="tos-h2-num">9.</span> Limitation of Liability</h2>
+<h3 class="tos-h3">9.1 Exclusion of Consequential Damages</h3>
+<p class="tos-p"><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL CLAYTON, McKAY & BAILEY, PC, ITS ATTORNEYS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING WITHOUT LIMITATION LOST PROFITS, LOST DATA, LOSS OF BUSINESS OPPORTUNITY, OR REPUTATIONAL HARM, ARISING OUT OF OR RELATED TO THESE TERMS OR YOUR USE OF THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</strong>
+</p>
+<h3 class="tos-h3">9.2 Cap on Liability</h3>
+<p class="tos-p"><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CMB'S TOTAL CUMULATIVE LIABILITY TO YOU ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICE, REGARDLESS OF THE CAUSE OF ACTION OR THEORY OF LIABILITY, SHALL NOT EXCEED THE GREATER OF: (A) THE TOTAL FEES PAID BY YOU TO CMB IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM; OR (B) ONE HUNDRED DOLLARS ($100.00).</strong>
+</p>
+<h3 class="tos-h3">9.3 Essential Basis</h3>
+<p class="tos-p">The limitations in this Section 9 reflect a reasonable allocation of risk between the parties and are an essential basis of the bargain between the parties. CMB would not provide access to the Service on commercially reasonable terms without these limitations.
+</p>
+<h3 class="tos-h3">9.4 Professional Liability</h3>
+<p class="tos-p">Nothing in Section 9.1 or 9.2 is intended to limit or waive any liability that may not be limited or waived under applicable professional responsibility rules or legal malpractice law with respect to work performed following the execution of an engagement letter and the formation of an attorney-client relationship.
+</p>
+<h2 id="tos-indemnification" class="tos-h2"><span class="tos-h2-num">10.</span> Indemnification</h2>
+<h3 class="tos-h3">10.1 User Indemnification</h3>
+<p class="tos-p">You agree to defend, indemnify, and hold harmless Clayton, McKay & Bailey, PC, and its attorneys, shareholders, employees, agents, successors, and assigns (collectively, "CMB Indemnitees") from and against any and all third-party claims, actions, suits, proceedings, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:
+</p>
+<ul class="tos-list">
+  <li>Your breach of any representation, warranty, or obligation under these Terms;</li>
+  <li>The inaccuracy, incompleteness, or fraudulent nature of any information or materials you submit through the API;</li>
+  <li>Your use of the Service in violation of applicable law or the rights of any third party;</li>
+  <li>Any claim that information or materials you submitted through the API infringes or misappropriates the intellectual property rights of a third party; or</li>
+  <li>Any claim arising from an unauthorized user's access to the Service through your API key resulting from your failure to maintain its confidentiality.</li>
+</ul>
+<h3 class="tos-h3">10.2 Indemnification Procedure</h3>
+<p class="tos-p">CMB will: (a) promptly notify you in writing of any claim for which it seeks indemnification; (b) provide you with reasonable cooperation in the defense of such claim at your expense; and (c) give you sole control of the defense and settlement of such claim, provided that you may not settle any claim in a manner that imposes any obligation on, or requires any admission of liability by, any CMB Indemnitee without CMB's prior written consent.
+</p>
+<h2 id="tos-intellectual-property-ownership" class="tos-h2"><span class="tos-h2-num">11.</span> Intellectual Property Ownership</h2>
+<h3 class="tos-h3">11.1 Client-Owned IP</h3>
+<p class="tos-p">All intellectual property rights in and to: (a) information, inventions, creative works, and materials that you submit to the Service; and (b) any completed legal filings, applications, registrations, and documents prepared by CMB on your behalf pursuant to an executed engagement letter, are and remain your property or the property of your clients, as applicable, subject to any rights of third parties and applicable law. CMB's preparation of such documents on your behalf does not grant CMB any ownership interest in your underlying intellectual property.
+</p>
+<h3 class="tos-h3">11.2 CMB-Owned IP</h3>
+<p class="tos-p">All intellectual property rights in and to the Service, including the API, its underlying software, algorithms, architecture, documentation, workflows, and all improvements, modifications, and derivative works thereof, are and remain the exclusive property of Clayton, McKay & Bailey, PC. These Terms do not transfer any ownership interest in the Service or CMB's proprietary technology to you. Any feedback, suggestions, or ideas you provide regarding the Service may be used by CMB without restriction or compensation.
+</p>
+<h3 class="tos-h3">11.3 No Implied License</h3>
+<p class="tos-p">Except for the limited license expressly granted in Section 8.1, these Terms do not grant you any right, title, or interest in or to the Service or any CMB intellectual property.
+</p>
+<h2 id="tos-termination" class="tos-h2"><span class="tos-h2-num">12.</span> Termination</h2>
+<h3 class="tos-h3">12.1 Termination by User</h3>
+<p class="tos-p">You may terminate your access to the Service at any time by providing written notice to CMB at info@cmblaw.com and ceasing use of your API key. Termination does not relieve you of any outstanding payment obligations or liability for activities conducted prior to termination.
+</p>
+<h3 class="tos-h3">12.2 Termination by CMB</h3>
+<p class="tos-p">CMB may terminate these Terms and your access to the Service: (a) immediately, upon written notice, for cause, including any material breach of these Terms, violation of applicable law, non-payment of fees, or conduct incompatible with CMB's professional obligations; or (b) for any reason or no reason, upon thirty (30) days' prior written notice. Prepaid fees for services not yet initiated as of the termination effective date will be refunded on a pro-rata basis at CMB's discretion.
+</p>
+<h3 class="tos-h3">12.3 Effect of Termination</h3>
+<p class="tos-p">Upon termination, your API key will be deactivated and your license under Section 8.1 will immediately cease. CMB will continue to process any submissions for which payment was received and attorney review had commenced prior to the termination effective date, unless termination is for cause related to those specific matters. Any active matter subject to an executed engagement letter will be handled in accordance with the terms of that engagement letter.
+</p>
+<h3 class="tos-h3">12.4 Data Following Termination</h3>
+<p class="tos-p">Following termination, CMB will retain submission data and matter records in accordance with Section 5.3. You may submit a data deletion request pursuant to Section 5.4 following termination, subject to CMB's professional and legal obligations to retain records.
+</p>
+<h3 class="tos-h3">12.5 Survival</h3>
+<p class="tos-p">The following Sections survive any termination or expiration of these Terms: 2 (No Attorney-Client Relationship by Default), 4 (AI Processing Disclosure), 5 (Data Handling and Privacy), 6 (Confidentiality), 7.2–7.5 (Payment obligations), 9 (Limitation of Liability), 10 (Indemnification), 11 (Intellectual Property), 12.4 (Data Following Termination), 13 (Governing Law), and all other provisions that by their nature should survive.
+</p>
+<h2 id="tos-governing-law-and-dispute-resolution" class="tos-h2"><span class="tos-h2-num">13.</span> Governing Law and Dispute Resolution</h2>
+<h3 class="tos-h3">13.1 Governing Law</h3>
+<p class="tos-p">These Terms and all claims or disputes arising out of or related to these Terms or the Service shall be governed by and construed in accordance with the laws of the <strong>State of Georgia</strong>, without regard to its conflict of law principles.
+</p>
+<h3 class="tos-h3">13.2 Venue</h3>
+<p class="tos-p">Any legal action or proceeding arising out of or related to these Terms or the Service shall be brought exclusively in the state or federal courts located in <strong>Fulton County, Georgia</strong>. You and CMB each hereby irrevocably consent to the personal jurisdiction of such courts and waive any objection to the laying of venue in such courts.
+</p>
+<h3 class="tos-h3">13.3 Informal Resolution</h3>
+<p class="tos-p">Before initiating formal legal proceedings, the parties agree to attempt in good faith to resolve any dispute through written notice and informal negotiation for a period of thirty (30) days following delivery of written notice identifying the dispute in reasonable detail.
+</p>
+<h3 class="tos-h3">13.4 Waiver of Jury Trial</h3>
+<p class="tos-p"><strong>TO THE EXTENT PERMITTED BY APPLICABLE LAW, EACH PARTY HEREBY WAIVES ITS RIGHT TO A JURY TRIAL IN ANY ACTION OR PROCEEDING ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICE.</strong>
+</p>
+<h2 id="tos-modifications-to-terms" class="tos-h2"><span class="tos-h2-num">14.</span> Modifications to Terms</h2>
+<h3 class="tos-h3">14.1 Right to Modify</h3>
+<p class="tos-p">CMB reserves the right to modify these Terms at any time. When CMB makes material modifications, it will:
+</p>
+<ul class="tos-list">
+  <li>Post the updated Terms at the URL where these Terms are published, with a new "Last Updated" date; and</li>
+  <li>Provide notice to registered Users via email to the address on file at least <strong>thirty (30) days</strong> before the updated Terms take effect.</li>
+</ul>
+<h3 class="tos-h3">14.2 Continued Use as Acceptance</h3>
+<p class="tos-p">Your continued use of the Service after the effective date of any modification constitutes your acceptance of the modified Terms. If you do not agree to the modified Terms, you must cease using the Service and notify CMB in writing prior to the effective date.
+</p>
+<h3 class="tos-h3">14.3 Service Changes</h3>
+<p class="tos-p">CMB may modify, suspend, or discontinue any aspect of the Service — including available service types, pricing, rate limits, and features — upon notice. Where reasonably practicable, CMB will provide at least thirty (30) days' advance notice of material changes to the Service.
+</p>
+<h2 id="tos-disclaimer" class="tos-h2"><span class="tos-h2-num">15.</span> Disclaimer</h2>
+<h3 class="tos-h3">15.1 No Legal Advice Through API Documentation</h3>
+<p class="tos-p">The Documentation, including all examples, sample requests, and illustrative code and content, is provided for technical and informational purposes only. <strong>Nothing in the Documentation or API examples constitutes legal advice.</strong> Examples used in the Documentation to illustrate API functionality — including sample trademark descriptions, patent claims, or entity formation details — are hypothetical and are not representations of CMB's legal positions or guidance.
+</p>
+<h3 class="tos-h3">15.2 "As Is" Service</h3>
+<p class="tos-p">THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CMB MAKES NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE SERVICE, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT. CMB DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM SECURITY VULNERABILITIES.
+</p>
+<h3 class="tos-h3">15.3 No Guarantee of Outcome</h3>
+<p class="tos-p">Legal outcomes are not guaranteed. CMB makes no representation or warranty that any filing, application, or document prepared through the Service will be approved, granted, or accepted by any government body, registry, or third party. The legal sufficiency and likelihood of success of any matter depends on numerous factors outside CMB's control.
+</p>
+<h2 id="tos-miscellaneous" class="tos-h2"><span class="tos-h2-num">16.</span> Miscellaneous</h2>
+<h3 class="tos-h3">16.1 Entire Agreement</h3>
+<p class="tos-p">These Terms, together with any executed engagement letters and applicable exhibits, constitute the entire agreement between you and CMB with respect to the Service and supersede all prior agreements, representations, and understandings, whether written or oral, relating to the same subject matter.
+</p>
+<h3 class="tos-h3">16.2 Severability</h3>
+<p class="tos-p">If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision will be enforced to the maximum extent permissible and the remaining provisions will continue in full force and effect.
+</p>
+<h3 class="tos-h3">16.3 Waiver</h3>
+<p class="tos-p">No failure or delay by CMB in exercising any right or remedy under these Terms will constitute a waiver of that right or remedy. No waiver is effective unless made in writing and signed by an authorized representative of CMB.
+</p>
+<h3 class="tos-h3">16.4 Assignment</h3>
+<p class="tos-p">You may not assign these Terms or any rights or obligations hereunder without CMB's prior written consent. CMB may assign these Terms in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets, provided that the assignee assumes all obligations herein. Any purported assignment in violation of this Section is void.
+</p>
+<h3 class="tos-h3">16.5 Force Majeure</h3>
+<p class="tos-p">Neither party will be liable for any failure or delay in performance under these Terms to the extent caused by events beyond that party's reasonable control, including without limitation acts of God, natural disasters, government actions, pandemics, power failures, or internet outages, provided the affected party provides prompt written notice and uses reasonable efforts to resume performance.
+</p>
+<h3 class="tos-h3">16.6 No Third-Party Beneficiaries</h3>
+<p class="tos-p">These Terms do not create any third-party beneficiary rights. They are for the sole benefit of CMB and the User and their respective permitted successors and assigns.
+</p>
+<h3 class="tos-h3">16.7 Headings</h3>
+<p class="tos-p">Section headings are for convenience only and have no legal effect.
+</p>
+<h2 id="tos-contact-information" class="tos-h2"><span class="tos-h2-num">17.</span> Contact Information</h2>
+<p class="tos-p">For questions, concerns, or notices regarding these Terms, please contact:
+</p>
+<p class="tos-firm-name"><strong>Clayton, McKay & Bailey, PC</strong></p>
+<p class="tos-p">Attn: Terms of Service Inquiries 800 Battery Ave. SE, Suite 300 Atlanta, GA 30339
+</p>
+<p class="tos-p"><strong>Email:</strong> info@cmblaw.com <strong>Phone:</strong> (404) 414-8633
+</p>
+<p class="tos-p">For API technical support, please refer to the Documentation or submit a support request through the developer portal.
+</p>
+<p class="tos-p">*These Terms of Service have been prepared as a working draft for review by the attorneys of Clayton, McKay & Bailey, PC prior to publication. This document does not constitute legal advice and should be reviewed by qualified counsel before adoption.*
+</p>
+<p class="tos-p">&copy; 2026 Clayton, McKay & Bailey, PC. All rights reserved.
+</p>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="./assets/logo-header-white.png" alt="CMB Law" class="logo-dark">
+        <img src="./assets/logo-header.png" alt="CMB Law" class="logo-light" style="display:none;">
+        <p class="footer__brand-text">
+          Clayton, McKay &amp; Bailey, PC<br>
+          800 Battery Ave. SE, Suite 300<br>
+          Atlanta, GA 30339<br>
+          (404) 414-8633
+        </p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__links-group">
+          <h4>API</h4>
+          <a href="./index.html#getting-started">Getting Started</a>
+          <a href="./index.html#api-reference">API Reference</a>
+          <a href="./index.html#pricing">Pricing</a>
+          <a href="./index.html#authentication">Authentication</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Legal</h4>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="https://cmblaw.com" target="_blank" rel="noopener noreferrer">cmblaw.com</a>
+          <a href="mailto:info@cmblaw.com" target="_blank" rel="noopener noreferrer">info@cmblaw.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Clayton, McKay &amp; Bailey, PC. All rights reserved.</span>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Theme toggle
+const toggle = document.querySelector('.theme-toggle');
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+  });
+}
+</script>
+
+</body>
+</html>

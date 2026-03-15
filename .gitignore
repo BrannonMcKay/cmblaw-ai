@@ -1,0 +1,26 @@
+# Database (created at runtime on Railway's persistent volume)
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment (secrets go in Railway dashboard, never in repo)
+.env
+.env.*
